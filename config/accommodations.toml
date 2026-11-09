@@ -1,0 +1,162 @@
+[monitor]
+start_date = 2027-06-26
+end_date = 2027-07-31
+party_size = 3
+host_delay_seconds = 0.5
+
+[[accommodations]]
+id = "lavarella"
+name = "Rifugio Lavarella"
+adapter = "booking_suedtirol"
+booking_url = "https://lavarella.it/en/book-online"
+
+[[accommodations]]
+id = "lagazuoi"
+name = "Rifugio Lagazuoi"
+adapter = "php"
+booking_url = "https://www.rifugiolagazuoi.com/EN/disponibilita.php"
+search_url = "https://rifugiolagazuoi.com/EN/prenotazione1.php"
+
+[[accommodations]]
+id = "croda-da-lago"
+name = "Rifugio Croda da Lago (Palmieri)"
+adapter = "php"
+booking_url = "https://www.crodadalago.it/Booking/index.php"
+search_url = "https://www.crodadalago.it/Booking/IT/prenotazione1.php"
+season_open_date = 2026-12-01
+
+[[accommodations]]
+id = "coldai"
+name = "Rifugio Coldai"
+adapter = "php"
+booking_url = "https://rifugiocoldai.com/Booking/index_en.php"
+search_url = "https://rifugiocoldai.com/Booking/EN/prenotazione1.php"
+
+[[accommodations]]
+id = "carestiato"
+name = "Rifugio Carestiato"
+adapter = "php"
+booking_url = "https://www.rifugiocarestiato.com/Booking/index_en.php"
+search_url = "https://www.rifugiocarestiato.com/Booking/EN/prenotazione1.php"
+
+[[accommodations]]
+id = "pian-de-fontana"
+name = "Rifugio Pian de Fontana"
+adapter = "unsupported"
+booking_url = "https://www.cailongarone.it/rifugi-e-bivacchi/"
+limitation = "No public real-time inventory; verification requires direct contact."
+
+[[accommodations]]
+id = "averau"
+name = "Rifugio Averau"
+adapter = "bukly"
+booking_url = "https://rifugioaverau.bukly.com/booking"
+
+[[accommodations]]
+id = "col-gallina"
+name = "Rifugio Col Gallina"
+adapter = "bukly"
+booking_url = "https://rifugiocolgallina.bukly.com/booking"
+
+[[accommodations]]
+id = "scoiattoli"
+name = "Rifugio Scoiattoli"
+adapter = "scoiattoli"
+booking_url = "https://www.rifugioscoiattoli.it/booking/eng/"
+
+[[accommodations]]
+id = "5-torri"
+name = "Rifugio 5 Torri"
+adapter = "unsupported"
+booking_url = "https://www.rifugio5torri.it/en/rooms.html"
+limitation = "The official site accepts email enquiries but exposes no real-time inventory."
+
+[[accommodations]]
+id = "nuvolau"
+name = "Rifugio Nuvolau"
+adapter = "nuvolau"
+booking_url = "https://rifugionuvolau.it/en/availability/"
+season_open_date = 2027-01-01
+
+[[accommodations]]
+id = "scotoni"
+name = "Rifugio Scotoni"
+adapter = "bukly"
+booking_url = "https://scotoni.bukly.com/booking"
+
+[[accommodations]]
+id = "fedare"
+name = "Rifugio Fedare"
+adapter = "unsupported"
+booking_url = "https://valfiorentinadolomiti.it/en/Rifugio-Fedare-Passo-Giau/Rifugio-Fedare/Welcome-to-the-Passo-Giau.html"
+limitation = "The official form is a non-binding enquiry and must not be submitted hourly."
+
+[[accommodations]]
+id = "fanes"
+name = "Rifugio Fanes"
+adapter = "booking_suedtirol"
+booking_url = "https://www.rifugiofanes.com/en/booking"
+
+[[accommodations]]
+id = "tissi"
+name = "Rifugio Tissi"
+adapter = "php"
+booking_url = "https://www.rifugiotissi.com/EN/disponibilita.php"
+search_url = "https://www.rifugiotissi.com/EN/prenotazione1.php"
+
+[[accommodations]]
+id = "passo-duran"
+name = "Rifugio Passo Duran (C. Tomè)"
+adapter = "php"
+booking_url = "https://rifugiopassoduran.it/booking/index.php"
+search_url = "https://rifugiopassoduran.it/booking/IT/prenotazione1.php"
+
+[[accommodations]]
+id = "san-sebastiano"
+name = "Rifugio San Sebastiano"
+adapter = "unsupported"
+booking_url = "https://www.passoduran.it/"
+limitation = "No public real-time inventory; verification requires direct contact."
+
+[[accommodations]]
+id = "vazzoler"
+name = "Rifugio Vazzoler"
+adapter = "php"
+booking_url = "https://www.rifugiovazzoler.com/res/gestionale/index.php"
+search_url = "https://www.rifugiovazzoler.com/res/gestionale/IT/prenotazione1.php"
+
+[[accommodations]]
+id = "passo-giau"
+name = "Berghotel Passo Giau"
+adapter = "unsupported"
+booking_url = "https://www.passogiau.it/en/booking-request/"
+limitation = "The official Beddy flow is currently an availability request, not verified instant inventory."
+
+[[accommodations]]
+id = "malga-giau"
+name = "Malga Giau"
+adapter = "unsupported"
+booking_url = "https://www.malgagiau.it/en/"
+limitation = "The official site provides phone and email contact only."
+
+[[accommodations]]
+id = "angelo-dibona"
+name = "Rifugio Angelo Dibona"
+adapter = "dibona"
+booking_url = "https://www.rifugiodibona.app/en"
+search_url = "https://www.rifugiodibona.app/api/search"
+
+[[accommodations]]
+id = "passo-valparola"
+name = "Rifugio Passo Valparola"
+adapter = "unsupported"
+booking_url = "https://www.dolomitisuperski.com/en/experiences/services/dolomites-a-z/Arabba/Rifugio-Passo-Valparola"
+limitation = "No operator booking engine was found; official listings provide direct contact only."
+
+[[accommodations]]
+id = "pramperet"
+name = "Rifugio Sommariva al Pramperet"
+adapter = "unsupported"
+booking_url = "https://www.prenotarifugi.cai.it/en/detail/?id=5925"
+limitation = "The CAI record is a catalog entry, not public real-time inventory."
+

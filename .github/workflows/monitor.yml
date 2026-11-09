@@ -1,0 +1,146 @@
+name: Alta Via 1 booking monitor
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      accommodation:
+        description: "Optional accommodation ID; blank scans all 23"
+        required: false
+        type: string
+      dry_run:
+        description: "Print events without creating issues or saving state"
+        required: true
+        default: false
+        type: boolean
+      capture_evidence:
+        description: "Capture browser screenshots"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: av1-monitor-state
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      PYTHONUNBUFFERED: "1"
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.playwright
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Cache Playwright browser
+        uses: actions/cache@v4
+        with:
+          path: .playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('pyproject.toml') }}
+
+      - name: Install application and Chromium
+        run: |
+          python -m pip install .
+          python -m playwright install --with-deps chromium
+
+      - name: Restore monitor state
+        shell: bash
+        run: |
+          mkdir -p artifacts/input
+          git fetch origin monitor-state:refs/remotes/origin/monitor-state || true
+          if git cat-file -e origin/monitor-state:state/monitor-state.json 2>/dev/null; then
+            git show origin/monitor-state:state/monitor-state.json > artifacts/input/monitor-state.json
+          fi
+
+      - name: Run monitor
+        shell: bash
+        env:
+          INPUT_ACCOMMODATION: ${{ inputs.accommodation }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+          INPUT_CAPTURE_EVIDENCE: ${{ inputs.capture_evidence }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          selection=(--all)
+          if [[ -n "${INPUT_ACCOMMODATION}" ]]; then
+            selection=(--accommodation "${INPUT_ACCOMMODATION}")
+          fi
+
+          state_args=()
+          if [[ -f artifacts/input/monitor-state.json ]]; then
+            state_args=(--state-in artifacts/input/monitor-state.json)
+          fi
+
+          evidence_args=()
+          if [[ "${INPUT_CAPTURE_EVIDENCE}" == "true" ]]; then
+            evidence_args=(--evidence-dir artifacts/evidence)
+          fi
+
+          dry_run_args=()
+          if [[ "${INPUT_DRY_RUN}" == "true" ]]; then
+            dry_run_args=(--dry-run)
+          fi
+
+          python -m av1_monitor run \
+            "${selection[@]}" \
+            "${state_args[@]}" \
+            "${evidence_args[@]}" \
+            "${dry_run_args[@]}" \
+            --github-issues \
+            --output-dir artifacts/run \
+            --state-out artifacts/run/monitor-state.json
+
+      - name: Persist state and latest reports
+        if: ${{ inputs.dry_run != true }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git show-ref --verify --quiet refs/remotes/origin/monitor-state; then
+            git worktree add state-work -b monitor-state origin/monitor-state
+          else
+            git worktree add state-work -b monitor-state
+          fi
+
+          mkdir -p state-work/state state-work/reports/latest
+          cp artifacts/run/monitor-state.json state-work/state/monitor-state.json
+          cp artifacts/run/scan.json state-work/reports/latest/scan.json
+          cp artifacts/run/availability.csv state-work/reports/latest/availability.csv
+          cp artifacts/run/summary.md state-work/reports/latest/summary.md
+          cp artifacts/run/events.json state-work/reports/latest/events.json
+          cp artifacts/run/notifications.json state-work/reports/latest/notifications.json
+
+          git -C state-work add state reports
+          if git -C state-work diff --cached --quiet; then
+            exit 0
+          fi
+          git -C state-work commit -m "chore: update AV1 monitor state"
+          git -C state-work push origin monitor-state
+
+      - name: Upload run evidence and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: av1-monitor-${{ github.run_id }}
+          path: |
+            artifacts/run
+            artifacts/evidence
+          if-no-files-found: ignore
+          retention-days: 14
+

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "av1-booking-monitor"
+version = "0.1.0"
+description = "Conservative availability checks for Alta Via 1 rifugi"
+readme = "readme.md"
+requires-python = ">=3.12"
+dependencies = [
+  "playwright>=1.64,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9,<10"]
+
+[project.scripts]
+av1-monitor = "av1_monitor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+asyncio_default_fixture_loop_scope = "function"
+

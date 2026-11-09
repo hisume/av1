@@ -1,0 +1,14 @@
+.venv/
+.playwright/
+state-work/
+artifacts/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp/
+pytest-cache-files-*/
+.coverage
+dist/
+build/
+*.egg-info/
+
