@@ -5,8 +5,8 @@ three-person availability at 23 accommodations on the Alta Via 1.
 
 ## Project status
 
-Phase 4 is complete and awaiting review. The repository now includes the full
-hourly automation path:
+Phase 5 is complete and the monitor is deployed. The repository now includes
+the full hourly automation path:
 
 - 15 accommodations have automated checkers across PHP, Bukly, Booking
   Südtirol, Scoiattoli, Nuvolau, and Dibona systems.
@@ -22,11 +22,10 @@ See [the Phase 1 research report](docs/phase-1-research.md) for the official
 booking paths and architecture. See [the Phase 2 prototype report](docs/phase-2-prototype.md)
 for the first three adapters. See [the Phase 3 expansion report](docs/phase-3-expansion.md)
 for the complete support matrix and live target-night findings. See [the Phase
-4 automation report](docs/phase-4-automation.md) for state behavior,
-notification rules, deployment, and validation evidence.
-
-A complete GitHub-hosted live validation of all 23 accommodations and 36 nights
-remains Phase 5.
+4 automation report](docs/phase-4-automation.md) for state behavior and
+notification rules. The [Phase 5 validation report](docs/phase-5-validation.md)
+records the deployed workflow runs, live findings, created issues, persisted
+state, and duplicate-suppression proof.
 
 ## Run the prototype
 
@@ -83,19 +82,16 @@ The [monitor workflow](.github/workflows/monitor.yml) runs at minute 17 of
 every hour and supports manual execution. It declares only `contents: write`
 and `issues: write`; no SMTP or personal-access-token secret is needed.
 
-After pushing the repository:
+The deployment is active. For notification delivery and future manual checks:
 
-1. Ensure GitHub Issues and Actions are enabled. Organization policy must allow
-   the workflow's requested write permissions.
-2. In **Actions → Alta Via 1 booking monitor → Run workflow**, first choose one
-   accommodation and enable `dry_run`. A dry run creates no issue and saves no
-   state.
-3. Run once with `dry_run` disabled. This creates the `monitor-state` branch.
-   Existing booking openings become a silent baseline, while currently
-   available three-person nights remain actionable and may create issues.
-4. To receive those issues by email, choose **Watch → Custom → Issues** for the
+1. To receive alert issues by email, choose **Watch → Custom → Issues** for the
    repository and enable email delivery in GitHub notification settings. See
    [GitHub's notification documentation](https://docs.github.com/en/subscriptions-and-notifications/get-started/configuring-notifications).
+2. For a non-mutating manual check, use **Actions → Alta Via 1 booking monitor
+   → Run workflow**, choose one accommodation, and enable `dry_run`. A dry run
+   creates no issue and saves no state.
+3. The persisted state and latest reports are maintained on the
+   [`monitor-state`](https://github.com/hisume/av1/tree/monitor-state) branch.
 
 Each issue includes an internal event key. If issue creation succeeds but the
 state push fails, retrying the workflow detects the existing key instead of
