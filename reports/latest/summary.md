@@ -13,13 +13,13 @@
 | Rifugio Scoiattoli | `scoiattoli` | `open` | 0 | 0 |
 | Rifugio 5 Torri | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Nuvolau | `nuvolau` | `not_open` | 0 | 0 |
-| Rifugio Scotoni | `bukly` | `open` | 1 | 0 |
+| Rifugio Scotoni | `bukly` | `unknown` | 0 | 0 |
 | Rifugio Fedare | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Fanes | `booking_suedtirol` | `unknown` | 0 | 36 |
-| Rifugio Tissi | `php` | `open` | 34 | 0 |
+| Rifugio Tissi | `php` | `open` | 33 | 1 |
 | Rifugio Passo Duran (C. Tomè) | `php` | `open` | 28 | 0 |
 | Rifugio San Sebastiano | `unsupported` | `unsupported` | 0 | 0 |
-| Rifugio Vazzoler | `php` | `open` | 28 | 0 |
+| Rifugio Vazzoler | `php` | `open` | 25 | 0 |
 | Berghotel Passo Giau | `unsupported` | `unsupported` | 0 | 0 |
 | Malga Giau | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Angelo Dibona | `dibona` | `not_open` | 0 | 0 |
@@ -28,6 +28,6 @@
 
 ## Changes and notifications
 
-- Transition events: 2
-- Notifications: 2
+- Transition events: 0
+- Notifications: 0
 - State saved: yes
