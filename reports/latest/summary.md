@@ -6,7 +6,7 @@
 | Rifugio Lagazuoi | `php` | `open` | 0 | 0 |
 | Rifugio Croda da Lago (Palmieri) | `php` | `not_open` | 0 | 0 |
 | Rifugio Coldai | `php` | `open` | 36 | 0 |
-| Rifugio Carestiato | `php` | `open` | 9 | 0 |
+| Rifugio Carestiato | `php` | `open` | 10 | 0 |
 | Rifugio Pian de Fontana | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Averau | `bukly` | `unknown` | 0 | 0 |
 | Rifugio Col Gallina | `bukly` | `open` | 5 | 0 |
@@ -19,7 +19,7 @@
 | Rifugio Tissi | `php` | `open` | 34 | 0 |
 | Rifugio Passo Duran (C. Tomè) | `php` | `open` | 28 | 0 |
 | Rifugio San Sebastiano | `unsupported` | `unsupported` | 0 | 0 |
-| Rifugio Vazzoler | `php` | `open` | 27 | 0 |
+| Rifugio Vazzoler | `php` | `open` | 28 | 0 |
 | Berghotel Passo Giau | `unsupported` | `unsupported` | 0 | 0 |
 | Malga Giau | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Angelo Dibona | `dibona` | `not_open` | 0 | 0 |
@@ -28,6 +28,6 @@
 
 ## Changes and notifications
 
-- Transition events: 0
-- Notifications: 0
+- Transition events: 2
+- Notifications: 2
 - State saved: yes
