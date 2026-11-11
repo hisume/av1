@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "event_type": "three_beds_available",
+    "event_key": "651ac6accf9371ea5076",
+    "accommodation_id": "lagazuoi",
+    "accommodation_name": "Rifugio Lagazuoi",
+    "booking_url": "https://www.rifugiolagazuoi.com/EN/disponibilita.php",
+    "verified_at": "2026-11-11T11:27:00.101409+00:00",
+    "results": [
+      {
+        "accommodation_id": "lagazuoi",
+        "accommodation_name": "Rifugio Lagazuoi",
+        "check_in": "2027-07-20",
+        "check_out": "2027-07-21",
+        "party_size": 3,
+        "status": "available_for_three",
+        "booking_url": "https://www.rifugiolagazuoi.com/EN/disponibilita.php",
+        "evidence": [
+          "Official search returned selectable capacity for 3 people across 1 offer(s).",
+          "The checker stopped before prenotazione2.php; no room was held."
+        ],
+        "offers": [
+          {
+            "description": "Dormitories with bunk beds",
+            "max_selectable": 3,
+            "price": null
+          }
+        ],
+        "error": null,
+        "screenshot": null,
+        "checked_at": "2026-11-11T11:06:49.241041+00:00"
+      }
+    ],
+    "generations": {
+      "2027-07-20": 1
+    }
+  }
+]
