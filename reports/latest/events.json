@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "event_type": "three_beds_available",
+    "event_key": "fe91d277a9d197aa01d3",
+    "accommodation_id": "carestiato",
+    "accommodation_name": "Rifugio Carestiato",
+    "booking_url": "https://www.rifugiocarestiato.com/Booking/index_en.php",
+    "verified_at": "2026-11-12T18:46:41.861260+00:00",
+    "results": [
+      {
+        "accommodation_id": "carestiato",
+        "accommodation_name": "Rifugio Carestiato",
+        "check_in": "2027-07-19",
+        "check_out": "2027-07-20",
+        "party_size": 3,
+        "status": "available_for_three",
+        "booking_url": "https://www.rifugiocarestiato.com/Booking/index_en.php",
+        "evidence": [
+          "Official search returned selectable capacity for 3 people across 1 offer(s).",
+          "The checker stopped before prenotazione2.php; no room was held."
+        ],
+        "offers": [
+          {
+            "description": "Room with 4-5 beds",
+            "max_selectable": 3,
+            "price": null
+          }
+        ],
+        "error": null,
+        "screenshot": null,
+        "checked_at": "2026-11-12T18:30:09.264999+00:00"
+      }
+    ],
+    "generations": {
+      "2027-07-19": 1
+    }
+  },
+  {
+    "event_type": "three_beds_available",
+    "event_key": "98d4d22339d0e46f1994",
+    "accommodation_id": "scotoni",
+    "accommodation_name": "Rifugio Scotoni",
+    "booking_url": "https://scotoni.bukly.com/booking",
+    "verified_at": "2026-11-12T18:46:41.861260+00:00",
+    "results": [
+      {
+        "accommodation_id": "scotoni",
+        "accommodation_name": "Rifugio Scotoni",
+        "check_in": "2027-07-09",
+        "check_out": "2027-07-10",
+        "party_size": 3,
+        "status": "available_for_three",
+        "booking_url": "https://scotoni.bukly.com/booking",
+        "evidence": [
+          "Bukly returned a selectable offer compatible with the requested dates and occupancy."
+        ],
+        "offers": [],
+        "error": null,
+        "screenshot": null,
+        "checked_at": "2026-11-12T18:37:07.999881+00:00"
+      }
+    ],
+    "generations": {
+      "2027-07-09": 1
+    }
+  }
+]
