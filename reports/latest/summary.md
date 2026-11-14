@@ -9,11 +9,11 @@
 | Rifugio Carestiato | `php` | `open` | 10 | 0 |
 | Rifugio Pian de Fontana | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Averau | `bukly` | `unknown` | 0 | 0 |
-| Rifugio Col Gallina | `bukly` | `open` | 7 | 0 |
+| Rifugio Col Gallina | `bukly` | `open` | 6 | 0 |
 | Rifugio Scoiattoli | `scoiattoli` | `open` | 0 | 0 |
 | Rifugio 5 Torri | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Nuvolau | `nuvolau` | `not_open` | 0 | 0 |
-| Rifugio Scotoni | `bukly` | `open` | 1 | 0 |
+| Rifugio Scotoni | `bukly` | `open` | 0 | 0 |
 | Rifugio Fedare | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Fanes | `booking_suedtirol` | `unknown` | 0 | 36 |
 | Rifugio Tissi | `php` | `open` | 34 | 0 |
