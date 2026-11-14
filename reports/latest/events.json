@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "event_type": "three_beds_available",
+    "event_key": "b785032394fa0b17486a",
+    "accommodation_id": "col-gallina",
+    "accommodation_name": "Rifugio Col Gallina",
+    "booking_url": "https://rifugiocolgallina.bukly.com/booking",
+    "verified_at": "2026-11-14T18:33:15.114232+00:00",
+    "results": [
+      {
+        "accommodation_id": "col-gallina",
+        "accommodation_name": "Rifugio Col Gallina",
+        "check_in": "2027-07-10",
+        "check_out": "2027-07-11",
+        "party_size": 3,
+        "status": "available_for_three",
+        "booking_url": "https://rifugiocolgallina.bukly.com/booking",
+        "evidence": [
+          "Bukly returned a selectable offer compatible with the requested dates and occupancy."
+        ],
+        "offers": [],
+        "error": null,
+        "screenshot": null,
+        "checked_at": "2026-11-14T18:21:54.459977+00:00"
+      }
+    ],
+    "generations": {
+      "2027-07-10": 1
+    }
+  }
+]
