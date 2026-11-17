@@ -1,31 +1,31 @@
 [
   {
     "event_type": "three_beds_available",
-    "event_key": "ddeba031a2aa04176efe",
-    "accommodation_id": "scotoni",
-    "accommodation_name": "Rifugio Scotoni",
-    "booking_url": "https://scotoni.bukly.com/booking",
-    "verified_at": "2026-11-17T14:58:33.092123+00:00",
+    "event_key": "e0192f264a60b761c78b",
+    "accommodation_id": "col-gallina",
+    "accommodation_name": "Rifugio Col Gallina",
+    "booking_url": "https://rifugiocolgallina.bukly.com/booking",
+    "verified_at": "2026-11-17T23:19:16.056699+00:00",
     "results": [
       {
-        "accommodation_id": "scotoni",
-        "accommodation_name": "Rifugio Scotoni",
-        "check_in": "2027-07-26",
-        "check_out": "2027-07-27",
+        "accommodation_id": "col-gallina",
+        "accommodation_name": "Rifugio Col Gallina",
+        "check_in": "2027-07-31",
+        "check_out": "2027-08-01",
         "party_size": 3,
         "status": "available_for_three",
-        "booking_url": "https://scotoni.bukly.com/booking",
+        "booking_url": "https://rifugiocolgallina.bukly.com/booking",
         "evidence": [
           "Bukly returned a selectable offer compatible with the requested dates and occupancy."
         ],
         "offers": [],
         "error": null,
         "screenshot": null,
-        "checked_at": "2026-11-17T14:50:11.494955+00:00"
+        "checked_at": "2026-11-17T23:08:47.022060+00:00"
       }
     ],
     "generations": {
-      "2027-07-26": 1
+      "2027-07-31": 3
     }
   }
 ]
