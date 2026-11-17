@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "event_type": "three_beds_available",
+    "event_key": "ddeba031a2aa04176efe",
+    "accommodation_id": "scotoni",
+    "accommodation_name": "Rifugio Scotoni",
+    "booking_url": "https://scotoni.bukly.com/booking",
+    "verified_at": "2026-11-17T14:58:33.092123+00:00",
+    "results": [
+      {
+        "accommodation_id": "scotoni",
+        "accommodation_name": "Rifugio Scotoni",
+        "check_in": "2027-07-26",
+        "check_out": "2027-07-27",
+        "party_size": 3,
+        "status": "available_for_three",
+        "booking_url": "https://scotoni.bukly.com/booking",
+        "evidence": [
+          "Bukly returned a selectable offer compatible with the requested dates and occupancy."
+        ],
+        "offers": [],
+        "error": null,
+        "screenshot": null,
+        "checked_at": "2026-11-17T14:50:11.494955+00:00"
+      }
+    ],
+    "generations": {
+      "2027-07-26": 1
+    }
+  }
+]
