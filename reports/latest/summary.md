@@ -28,6 +28,6 @@
 
 ## Changes and notifications
 
-- Transition events: 1
-- Notifications: 1
+- Transition events: 0
+- Notifications: 0
 - State saved: yes
