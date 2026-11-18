@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "event_type": "three_beds_available",
+    "event_key": "10dc28b8b914173f4b6e",
+    "accommodation_id": "carestiato",
+    "accommodation_name": "Rifugio Carestiato",
+    "booking_url": "https://www.rifugiocarestiato.com/Booking/index_en.php",
+    "verified_at": "2026-11-18T14:22:23.363228+00:00",
+    "results": [
+      {
+        "accommodation_id": "carestiato",
+        "accommodation_name": "Rifugio Carestiato",
+        "check_in": "2027-07-21",
+        "check_out": "2027-07-22",
+        "party_size": 3,
+        "status": "available_for_three",
+        "booking_url": "https://www.rifugiocarestiato.com/Booking/index_en.php",
+        "evidence": [
+          "Official search returned selectable capacity for 3 people across 1 offer(s).",
+          "The checker stopped before prenotazione2.php; no room was held."
+        ],
+        "offers": [
+          {
+            "description": "Room with 4-5 beds",
+            "max_selectable": 3,
+            "price": null
+          }
+        ],
+        "error": null,
+        "screenshot": null,
+        "checked_at": "2026-11-18T14:10:17.358171+00:00"
+      }
+    ],
+    "generations": {
+      "2027-07-21": 1
+    }
+  }
+]
