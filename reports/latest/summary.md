@@ -17,7 +17,7 @@
 | Rifugio Fedare | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Fanes | `booking_suedtirol` | `unknown` | 0 | 36 |
 | Rifugio Tissi | `php` | `unknown` | 0 | 0 |
-| Rifugio Passo Duran (C. Tomè) | `php` | `open` | 24 | 0 |
+| Rifugio Passo Duran (C. Tomè) | `php` | `unknown` | 0 | 0 |
 | Rifugio San Sebastiano | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Vazzoler | `php` | `open` | 25 | 0 |
 | Berghotel Passo Giau | `unsupported` | `unsupported` | 0 | 0 |
