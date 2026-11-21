@@ -13,7 +13,7 @@
 | Rifugio Scoiattoli | `scoiattoli` | `open` | 0 | 0 |
 | Rifugio 5 Torri | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Nuvolau | `nuvolau` | `not_open` | 0 | 0 |
-| Rifugio Scotoni | `bukly` | `open` | 1 | 0 |
+| Rifugio Scotoni | `bukly` | `open` | 0 | 0 |
 | Rifugio Fedare | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Fanes | `booking_suedtirol` | `unknown` | 0 | 36 |
 | Rifugio Tissi | `php` | `unknown` | 0 | 0 |
