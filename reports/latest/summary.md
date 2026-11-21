@@ -16,7 +16,7 @@
 | Rifugio Scotoni | `bukly` | `open` | 1 | 0 |
 | Rifugio Fedare | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Fanes | `booking_suedtirol` | `unknown` | 0 | 36 |
-| Rifugio Tissi | `php` | `unknown` | 0 | 1 |
+| Rifugio Tissi | `php` | `unknown` | 0 | 0 |
 | Rifugio Passo Duran (C. Tomè) | `php` | `open` | 23 | 0 |
 | Rifugio San Sebastiano | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Vazzoler | `php` | `open` | 25 | 0 |
