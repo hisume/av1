@@ -3,7 +3,7 @@
 | Accommodation | Adapter | Booking opening | Available nights | Errors |
 |---|---|---|---:|---:|
 | Rifugio Lavarella | `booking_suedtirol` | `unknown` | 0 | 36 |
-| Rifugio Lagazuoi | `php` | `open` | 0 | 1 |
+| Rifugio Lagazuoi | `php` | `open` | 0 | 0 |
 | Rifugio Croda da Lago (Palmieri) | `php` | `not_open` | 0 | 0 |
 | Rifugio Coldai | `php` | `open` | 36 | 0 |
 | Rifugio Carestiato | `php` | `open` | 6 | 0 |
@@ -16,7 +16,7 @@
 | Rifugio Scotoni | `bukly` | `open` | 0 | 0 |
 | Rifugio Fedare | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Fanes | `booking_suedtirol` | `unknown` | 0 | 36 |
-| Rifugio Tissi | `php` | `unknown` | 0 | 1 |
+| Rifugio Tissi | `php` | `unknown` | 0 | 0 |
 | Rifugio Passo Duran (C. Tomè) | `php` | `open` | 23 | 0 |
 | Rifugio San Sebastiano | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Vazzoler | `php` | `open` | 25 | 0 |
