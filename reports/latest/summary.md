@@ -9,7 +9,7 @@
 | Rifugio Carestiato | `php` | `open` | 6 | 0 |
 | Rifugio Pian de Fontana | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Averau | `bukly` | `unknown` | 0 | 0 |
-| Rifugio Col Gallina | `bukly` | `open` | 4 | 0 |
+| Rifugio Col Gallina | `bukly` | `open` | 3 | 0 |
 | Rifugio Scoiattoli | `scoiattoli` | `open` | 0 | 0 |
 | Rifugio 5 Torri | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Nuvolau | `nuvolau` | `not_open` | 0 | 0 |
