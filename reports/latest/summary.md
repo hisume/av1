@@ -6,18 +6,18 @@
 | Rifugio Lagazuoi | `php` | `open` | 0 | 0 |
 | Rifugio Croda da Lago (Palmieri) | `php` | `not_open` | 0 | 0 |
 | Rifugio Coldai | `php` | `open` | 36 | 0 |
-| Rifugio Carestiato | `php` | `open` | 7 | 0 |
+| Rifugio Carestiato | `php` | `open` | 8 | 0 |
 | Rifugio Pian de Fontana | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Averau | `bukly` | `unknown` | 0 | 0 |
 | Rifugio Col Gallina | `bukly` | `open` | 3 | 0 |
 | Rifugio Scoiattoli | `scoiattoli` | `open` | 0 | 0 |
 | Rifugio 5 Torri | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Nuvolau | `nuvolau` | `not_open` | 0 | 0 |
-| Rifugio Scotoni | `bukly` | `open` | 1 | 0 |
+| Rifugio Scotoni | `bukly` | `open` | 0 | 0 |
 | Rifugio Fedare | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Fanes | `booking_suedtirol` | `unknown` | 0 | 36 |
 | Rifugio Tissi | `php` | `unknown` | 0 | 0 |
-| Rifugio Passo Duran (C. Tomè) | `php` | `open` | 23 | 0 |
+| Rifugio Passo Duran (C. Tomè) | `php` | `unknown` | 0 | 0 |
 | Rifugio San Sebastiano | `unsupported` | `unsupported` | 0 | 0 |
 | Rifugio Vazzoler | `php` | `open` | 29 | 0 |
 | Berghotel Passo Giau | `unsupported` | `unsupported` | 0 | 0 |
@@ -28,6 +28,6 @@
 
 ## Changes and notifications
 
-- Transition events: 0
-- Notifications: 0
+- Transition events: 1
+- Notifications: 1
 - State saved: yes
